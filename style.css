@@ -17,6 +17,23 @@ Theme URI:
 /*------------------------------------------------------------------
 	1. import files
 -------------------------------------------------------------------*/
+
+@font-face {
+  font-family: logo_font;
+  src: url('fonts/tycho.otf');
+}
+@font-face {
+  font-family: body_font;
+  src: url('fonts/Poppins-SemiBold.otf');
+}
+
+@font-face {
+  font-family: heading;
+  src: url('fonts/Poppins-Bold.otf');
+}
+
+
+
 .clearfix:after, .widget:after, .search-form:after, .post-password-form p:after, .navigation-single:after {
   content: '';
   display: block;
@@ -845,8 +862,9 @@ a {
 }
 
 #header .holder {
-  padding: 41px 0;
+  padding: 15px 0;
   transition: all ease 0.3s;
+  border-bottom: 2px solid #d7d7d7;
 }
 
 #header #nav {
@@ -938,6 +956,7 @@ a {
   color: #393939;
   transition: all ease 0.4s;
   font: 700 36px/40px "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: logo_font;
 }
 
 .logo a {
@@ -1163,13 +1182,17 @@ a {
 
 .main-banner .heading {
   color: #393939;
-  margin: 0 0 46px;
-  font: 700 64px/70px "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 45px 0 15px 20px;
+  font-family: heading;
+  line-height: 70px;
+  text-transform: uppercase;
+  font-size: 60px;
 }
 
 .main-banner p {
   margin: 0;
   max-width: 760px;
+  font-family: body_font;
 }
 
 .main-banner .bg {
@@ -1182,7 +1205,7 @@ a {
 }
 
 .main-banner.full .caption {
-  height: 100vh;
+  height: 70vh;
   white-space: nowrap;
   text-align: center;
 }
@@ -1204,6 +1227,12 @@ a {
 
 .main-banner.center p {
   margin: 0 auto;
+}
+
+.heading{
+  padding-left: 10px;
+  font-family: body_font;
+  color: #000;
 }
 
 .grid-sizer {
@@ -1656,6 +1685,7 @@ a {
 
 .main-slider .slick-dots li.slick-active button {
   background: #393939;
+  font-family: body_font;
 }
 
 .main-slider button {
@@ -1670,6 +1700,7 @@ a {
   background: transparent;
   transition: all .4s ease;
   border: 2px solid #393939;
+  font-family: body_font;
 }
 
 .port-view {
