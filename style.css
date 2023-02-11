@@ -2332,3 +2332,22 @@ a {
     transform: rotate(360deg);
   }
 }
+
+.custom_button{
+  background-color: #ffffff;
+  color: black; width: 175px;
+  padding: 12px;
+  font-size: 22px;
+  font-family: body_font;
+  border-radius: 25px;
+  border: 2px solid #47c157;
+}
+
+@media screen and (max-width: 480px) {
+  .custom_button{
+    color: black; width: 150px;
+  }
+  .main-banner.full .caption{
+    height: 80vh;
+  }
+}
